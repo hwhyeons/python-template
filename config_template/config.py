@@ -29,7 +29,12 @@ def get_keys(key_type:str, *keys):
     values = []
     for key in keys:
         values.append(config[key_type][key])
-    return tuple(values)
+    if len(values) == 0:
+        return None
+    elif len(values) == 1:
+        return values[0]
+    else:
+        return tuple(values)
 
 
 # 키값 설정
