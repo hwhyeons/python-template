@@ -1,5 +1,6 @@
 
 import sys
+import os
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 
@@ -15,6 +16,8 @@ class MyApp(QtWidgets.QMainWindow):
 
 
 if __name__ == '__main__':
+    # 모니터에따라 qt designer에서 나온 비율이랑 안맞을 수 있음
+    os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
     app = QtWidgets.QApplication(sys.argv)
     me = MyApp()
     sys.exit(app.exec())
