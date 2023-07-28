@@ -20,4 +20,4 @@ if __name__ == '__main__':
     os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
     app = QtWidgets.QApplication(sys.argv)
     me = MyApp()
-    sys.exit(app.exec())
+    sys.exit(app.exec()) # 화면 종료되면 프로그램 종료 -> 프로그램 종료 없이 하려면 app.exec() 단독 실행
