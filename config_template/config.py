@@ -4,7 +4,7 @@ import configparser
 import os.path
 
 
-CONFIG_FILE = 'config.ini'
+CONFIG_FILE = '/config.ini' # config 파일 경로는 프로젝트 기본 경로로 설정하는게 좋다 -> 현재 경로로 하게 되면 다른 폴더에서는 다른 config파일이 생성됨
 
 CATEGORY = "CATEGORY_inform"
 
