@@ -30,7 +30,7 @@ def convert2initial_constant(s):
                 flag=True
                 break
         if not flag:
-            ans+=ch # 한글이 아니면 아무거나 추가
+            ans+=ch # 한글이 아니면 원본 글자 추가
     return ans
 
 @functools.cache
