@@ -4,6 +4,10 @@ import os
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 
+"""
+예시
+edit text 값 가져오기 : edit text의 이름이 et1이라면, self.ui.et1.toPlainText()
+"""
 class MyApp(QtWidgets.QMainWindow):
     def __init__(self, parent = None):
         super().__init__(parent)
