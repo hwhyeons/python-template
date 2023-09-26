@@ -7,6 +7,7 @@ from PyQt5 import uic
 """
 예시
 edit text 값 가져오기 : edit text의 이름이 et1이라면, self.ui.et1.toPlainText()
+line edit 값 가져오기 : text()
 """
 class MyApp(QtWidgets.QMainWindow):
     def __init__(self, parent = None):
