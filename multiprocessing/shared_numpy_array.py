@@ -4,6 +4,9 @@ import numpy
 import numpy as np
 from numpy import ndarray
 
+"""
+참고만 하기 (오류 있음)
+"""
 
 def add_num(start,end):
 
