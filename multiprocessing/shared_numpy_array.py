@@ -10,7 +10,8 @@ def add_num(start,end):
     TYPE_SIZE = 4  # numpy.int32
     from multiprocessing.shared_memory import SharedMemory
     sm = SharedMemory('NewMemory')
-    data = ndarray((sm.size//TYPE_SIZE,), dtype=numpy.int32, buffer=sm.buf)
+    # data = ndarray((sm.size//TYPE_SIZE,), dtype=numpy.int32, buffer=sm.buf)
+    data = np.frombuffer(sm.buf, dtype=np.int32)
     for i in range(start,end+1):
         data[i] = i
 
