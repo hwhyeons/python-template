@@ -10,7 +10,7 @@ from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QFile, QIODevice
 
-ui_file_name = "untitled.ui"
+ui_file_name = "untitled.ui" # PyQt Designer로 만든 ui 파일
 ui_file = QFile(ui_file_name)
 # if not ui_file.open(QIODevice.ReadOnly):
 #     print(f"Cannot open {ui_file_name}: {ui_file.errorString()}")
