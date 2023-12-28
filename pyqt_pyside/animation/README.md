@@ -1,7 +1,7 @@
 
 PyQT5를 이용한 스와이프 애니메이션
 
-참고 링크 : https://stackoverflow.com/questions/25644026/setting-word-wrap-on-qlabel-breaks-size-constrains-for-the-window
+코드 참고 : [링크](https://stackoverflow.com/questions/25644026/setting-word-wrap-on-qlabel-breaks-size-constrains-for-the-window)
 
 위 링크에 나온 방식으로는 스와이프 전환 효과가 생각보다 부드럽지 않아서 QTimer을 이용해 직접 갱신 주기를 설정
 
